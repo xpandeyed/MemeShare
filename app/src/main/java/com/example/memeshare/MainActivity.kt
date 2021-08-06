@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     {
         var sendMeme = Intent(Intent.ACTION_SEND).also{
             it.type = "text/plain"
-            it.putExtra(Intent.EXTRA_STREAM, link)
+            it.putExtra(Intent.EXTRA_TEXT, link)
         }
         startActivity(sendMeme)
     }
